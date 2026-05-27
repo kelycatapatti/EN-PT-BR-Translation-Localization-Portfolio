@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kely Catapatti | EN → PT-BR Translator & Localization Specialist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #0f2d59 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-white/90 border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#home" class="flex items-center space-x-2">
+                <!-- Standardized first name and surname to use the same font, style, and uniform color -->
+                <span class="font-serif font-bold text-xl sm:text-2xl text-slate-900 tracking-wide">
+                    Kely Catapatti
+                </span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-brand-500 transition-colors">About Me</a>
+                <a href="#specialties" class="hover:text-brand-500 transition-colors">Specialties</a>
+                <a href="#projects" class="hover:text-brand-500 transition-colors">Portfolio</a>
+                <a href="#medical" class="hover:text-brand-500 transition-colors">Medical Translation</a>
+                <a href="#ai-tech" class="hover:text-brand-500 transition-colors">AI & Tech</a>
+                <a href="#workflow" class="hover:text-brand-500 transition-colors">Workflow</a>
+                <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-3">
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-800 uppercase tracking-wider">EN ➔ PT-BR</span>
+                <a href="#contact" class="bg-brand-900 hover:bg-brand-800 text-white text-xs sm:text-sm font-medium px-4 py-2 rounded-lg transition-all shadow-sm">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="custom-gradient text-white py-16 sm:py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-left">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-brand-500/20 text-sky-300 border border-brand-500/30">
+                        <i class="fa-solid fa-languages text-xs"></i> Professional Localization
+                    </span>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                        Kely Catapatti
+                    </h1>
+                    <!-- Adjusted Hero text based on doc instructions -->
+                    <p class="text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed">
+                        Specialized in <span class="font-semibold text-white">EN → PT-BR</span> localization for corporate communication, healthcare content, digital materials, and multilingual audience adaptation.
+                    </p>
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <a href="#projects" class="bg-brand-500 hover:bg-brand-500/90 text-white font-medium px-6 py-3 rounded-lg transition-all flex items-center gap-2 shadow-lg">
+                            <i class="fa-solid fa-folder-open"></i> View Portfolio
+                        </a>
+                        <a href="#contact" class="bg-white/10 hover:bg-white/15 text-white border border-white/20 font-medium px-6 py-3 rounded-lg transition-all flex items-center gap-2">
+                            Request a Sample <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex justify-center">
+                    <!-- Tech Card Summary -->
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8 backdrop-blur-md w-full max-w-sm shadow-2xl relative">
+                        <div class="absolute -top-3 -right-3 w-12 h-12 bg-brand-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">EN</div>
+                        <div class="absolute -bottom-3 -left-3 w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">PT</div>
+                        
+                        <h3 class="text-sm font-semibold tracking-wider text-sky-400 uppercase mb-4">Core Focus</h3>
+                        <div class="space-y-4 text-left">
+                            <div class="flex items-start gap-3">
+                                <span class="p-2 rounded-lg bg-white/10 text-sky-300 mt-1"><i class="fa-solid fa-users text-sm"></i></span>
+                                <div>
+                                    <h4 class="font-medium text-white text-sm">Corporate & HR</h4>
+                                    <p class="text-slate-400 text-xs mt-0.5">Corporate communications, training, and employee policies.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="p-2 rounded-lg bg-white/10 text-emerald-300 mt-1"><i class="fa-solid fa-file-medical text-sm"></i></span>
+                                <div>
+                                    <!-- Modified Title based on instruction 2 -->
+                                    <h4 class="font-medium text-white text-sm">Healthcare & Medical Localization</h4>
+                                    <p class="text-slate-400 text-xs mt-0.5">Wikipedia medical contributions and public health materials.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="p-2 rounded-lg bg-white/10 text-amber-300 mt-1"><i class="fa-solid fa-robot text-sm"></i></span>
+                                <div>
+                                    <h4 class="font-medium text-white text-sm">AI Evaluation</h4>
+                                    <p class="text-slate-400 text-xs mt-0.5">AI-assisted linguistic quality rating and relevance analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Specialties Section -->
+    <section id="specialties" class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-semibold text-brand-500 tracking-wider uppercase">Areas of Expertise</span>
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight mt-1">Core Specialties</h2>
+                <div class="h-1 w-12 bg-brand-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                <!-- Specialty 1 -->
+                <div class="p-6 bg-slate-50 border border-slate-100 rounded-2xl hover:border-brand-200 hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-800 flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">Human Resources & Corporate Communication</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Training materials (L&D), talent management documentation, internal corporate reports, compliance policies, and executive letters.
+                    </p>
+                </div>
+
+                <!-- Specialty 2 -->
+                <div class="p-6 bg-slate-50 border border-slate-100 rounded-2xl hover:border-brand-200 hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">Healthcare & Medical Localization</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Public health information, informative medical literature, pharmacology articles, and localized scientific content for patient outreach.
+                    </p>
+                </div>
+
+                <!-- Specialty 3 -->
+                <div class="p-6 bg-slate-50 border border-slate-100 rounded-2xl hover:border-brand-200 hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-800 flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">Digital Content Localization</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Blog posts, marketing newsletters, digital advertising campaigns, and social media outreach tailored to maximize Brazilian engagement.
+                    </p>
+                </div>
+
+                <!-- Specialty 4 -->
+                <div class="p-6 bg-slate-50 border border-slate-100 rounded-2xl hover:border-brand-200 hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">Storytelling & Editorial Content</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Biographies, narrative-driven eBooks, training guides, and opinion columns maintaining the author's voice and target language natural flow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 md:py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Column -->
+                <div class="lg:col-span-7 space-y-6 text-left">
+                    <span class="text-xs font-semibold text-brand-500 tracking-wider uppercase">About Me</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">
+                        Bridging corporate subject matter expertise with linguistic fluency
+                    </h2>
+                    
+                    <div class="space-y-4 text-slate-600 leading-relaxed text-sm">
+                        <p>
+                            I am an English-to-Brazilian Portuguese localization specialist with a strong professional background in Human Resources and corporate communication.
+                        </p>
+                        <p>
+                            My experience within multinational companies allows me to work naturally with internal communications, training materials, employee policies, and business-oriented content while maintaining cultural fluency and terminology accuracy.
+                        </p>
+                        <!-- Updated paragraph 3 based on Instruction 4 -->
+                        <p>
+                            I also contribute to healthcare and public health localization projects through volunteer healthcare localization and MTPE initiatives focused on accessibility, clarity, and natural language adaptation.
+                        </p>
+                        <p>
+                            I believe careers are built through “living choices” — experiences that evolve over time and connect different areas of expertise. This mindset allows me to combine corporate precision, linguistic fluency, and audience-focused localization for Brazilian Portuguese readers.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Professional Summary Card -->
+                <div class="lg:col-span-5 bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 card-shadow text-left">
+                    <h3 class="text-lg font-bold text-slate-900 mb-6 pb-4 border-b border-slate-100">Professional Summary</h3>
+                    <ul class="space-y-5 text-xs sm:text-sm">
+                        <li class="flex items-start gap-3">
+                            <div class="text-brand-500 mt-1"><i class="fa-solid fa-language"></i></div>
+                            <div>
+                                <span class="block text-xs text-slate-400 font-semibold uppercase tracking-wider">Language pair</span>
+                                <span class="font-semibold text-slate-800">EN → PT-BR Localization</span>
+                                <span class="block text-xs text-slate-500 mt-0.5">Native Brazilian Portuguese</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-brand-500 mt-1"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div>
+                                <span class="block text-xs text-slate-400 font-semibold uppercase tracking-wider">Education</span>
+                                <span class="font-semibold text-slate-800">MBA in Human Resources</span>
+                                <span class="block text-xs text-slate-500">Bachelor’s Degree in HR Management</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-brand-500 mt-1"><i class="fa-solid fa-microchip"></i></div>
+                            <div>
+                                <span class="block text-xs text-slate-400 font-semibold uppercase tracking-wider">AI Training Role</span>
+                                <span class="font-semibold text-slate-800">AI Ads Quality Rater</span>
+                                <span class="block text-xs text-slate-500 mt-0.5">Linguistic QA & Content Evaluation (TELUS Digital)</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-brand-500 mt-1"><i class="fa-solid fa-check-double"></i></div>
+                            <div>
+                                <span class="block text-xs text-slate-400 font-semibold uppercase tracking-wider">Services</span>
+                                <span class="font-semibold text-slate-800">Translation & Localization, MTPE (Light & Full), Proofreading & Linguistic QA</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Portfolio Section -->
+    <section id="projects" class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-semibold text-brand-500 tracking-wider uppercase">Translation Samples</span>
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight mt-1">Interactive Project Showcases</h2>
+                <p class="text-slate-500 text-sm mt-2">Explore original source text side-by-side with localized translations to evaluate stylistic accuracy.</p>
+                <div class="h-1 w-12 bg-brand-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Tabs Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button onclick="switchTab('project1')" id="btn-project1" class="tab-btn px-4 py-2 text-xs sm:text-sm font-medium rounded-full bg-brand-900 text-white transition-all shadow">
+                    Project 1: HR & Corp. Communication
+                </button>
+                <button onclick="switchTab('project2')" id="btn-project2" class="tab-btn px-4 py-2 text-xs sm:text-sm font-medium rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all border border-slate-200">
+                    Project 2: Career Narrative Article
+                </button>
+                <button onclick="switchTab('project3')" id="btn-project3" class="tab-btn px-4 py-2 text-xs sm:text-sm font-medium rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all border border-slate-200">
+                    Project 3: Storytelling & Education
+                </button>
+            </div>
+
+            <!-- Tab 1 Context -->
+            <div id="project1" class="tab-content block">
+                <!-- Meta Banner (Word Count removed based on instruction 6) -->
+                <div class="bg-sky-50/50 rounded-2xl p-5 border border-sky-100/60 mb-8 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-left">
+                    <div>
+                        <span class="block text-slate-400 uppercase tracking-wider font-semibold">Language Pair</span>
+                        <span class="font-medium text-slate-800">EN ➔ PT-BR Localization</span>
+                    </div>
+                    <div>
+                        <span class="block text-slate-400 uppercase tracking-wider font-semibold">Area</span>
+                        <span class="font-medium text-slate-800">Human Resources & Corporate Communication</span>
+                    </div>
+                    <div>
+                        <span class="block text-slate-400 uppercase tracking-wider font-semibold">Scope & Adaptations</span>
+                        <span class="font-medium text-slate-800">Tone adaptation | Terminology consistency</span>
+                    </div>
+                </div>
+
+                <div class="text-slate-500 text-xs mb-6 italic flex items-center gap-2 text-left">
+                    <i class="fa-solid fa-circle-info text-sky-500"></i> Observe the application of highly natural corporate terminology (e.g., using <strong>"colaboradores"</strong> instead of "funcionários", and <strong>"apoiar lideranças"</strong> instead of "apoiar os líderes").
+                </div>
+
+                <!-- Bilingual Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <div class="bg-slate-950 text-slate-200 p-6 rounded-2xl border border-slate-800">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-800 text-xs uppercase tracking-wider font-semibold text-brand-500">
+                            <span>Source Text (English)</span>
+                            <i class="fa-solid fa-flag-usa"></i>
+                        </div>
+                        <div class="space-y-6 text-xs sm:text-sm leading-relaxed font-mono">
+                            <div>
+                                <p class="text-white font-semibold mb-2 text-xs uppercase tracking-wider text-slate-500">Excerpt 1</p>
+                                "Human Resources has changed considerably over the past years. What was once seen mainly as an administrative function is now recognized as a key strategic area within organizations. Modern HR departments are expected not only to manage processes and policies, but also to support people, improve performance, and contribute to organizational growth."
+                            </div>
+                            <div class="border-t border-slate-800 pt-4">
+                                <p class="text-white font-semibold mb-2 text-xs uppercase tracking-wider text-slate-500">Excerpt 2</p>
+                                "Employee engagement has become a major focus for many HR teams. Engaged employees usually show higher levels of productivity, collaboration, and job satisfaction. Human Resources contributes to engagement by developing recognition programs, promoting well-being initiatives, and creating open communication channels. Tools such as employee surveys, feedback sessions, and regular check-ins help HR understand employee perceptions and identify areas that require attention."
+                            </div>
+                            <div class="border-t border-slate-800 pt-4">
+                                <p class="text-white font-semibold mb-2 text-xs uppercase tracking-wider text-slate-500">Excerpt 3</p>
+                                "Finally, Human Resources acts as a bridge between employees and the organization. By listening to employee concerns, supporting leaders, and aligning people initiatives with business goals, HR helps create a balanced and productive work environment. As organizations continue to face change and uncertainty, the role of Human Resources remains essential in building engaged teams, supporting development, and driving long-term organizational success."
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-sky-50/20 text-slate-800 p-6 rounded-2xl border border-sky-100">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-sky-100 text-xs uppercase tracking-wider font-semibold text-brand-900">
+                            <span>Target Text (Portuguese - PT-BR)</span>
+                            <i class="fa-solid fa-flag"></i>
+                        </div>
+                        <div class="space-y-6 text-xs sm:text-sm leading-relaxed">
+                            <div>
+                                <p class="text-brand-900 font-semibold mb-2 text-xs uppercase tracking-wider">Localized Version</p>
+                                "A área de Recursos Humanos passou por mudanças consideráveis nos últimos anos. O que antes era visto mais como uma área administrativa, agora é reconhecida como uma área estratégica fundamental dentro das empresas. Espera-se que os departamentos de Recursos Humanos modernos não apenas gerenciem processos e políticas, mas também apoiem os colaboradores, potencializem o desempenho e contribuam para o crescimento organizacional."
+                            </div>
+                            <div class="border-t border-sky-100 pt-4">
+                                <p class="text-brand-900 font-semibold mb-2 text-xs uppercase tracking-wider">Localized Version</p>
+                                "O engajamento dos colaboradores tornou-se uma meta importante para as equipes de RH. Colaboradores engajados geralmente demonstram níveis mais altos de produtividade, colaboração e satisfação no trabalho. O RH contribui para o engajamento, desenvolvendo programas de reconhecimento, promovendo iniciativas de bem-estar e criando canais de comunicação abertos. Ferramentas como pesquisas de clima, sessões de feedback e reuniões periódicas ajudam o RH a entender as percepções dos colaboradores e identificar áreas que precisam de atenção."
+                            </div>
+                            <div class="border-t border-sky-100 pt-4">
+                                <p class="text-brand-900 font-semibold mb-2 text-xs uppercase tracking-wider">Localized Version</p>
+                                "Por fim, o Recursos Humanos atua como uma ponte entre os colaboradores e a organização. Ao ouvir as preocupações dos colaboradores, apoiar lideranças e alinhar as iniciativas de gestão de pessoas aos objetivos do negócio, o RH ajuda a criar um ambiente de trabalho equilibrado e produtivo. À medida que as empresas continuam a enfrentar mudanças e incertezas, o papel do RH permanece essencial para construir equipes engajadas, apoiar o desenvolvimento e impulsionar o sucesso organizacional a longo prazo."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2 Context -->
+            <div id="project2" class="tab-content hidden">
+                <div class="bg-sky-50/50 rounded-2xl p-5 border border-sky-100/60 mb-8 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-left">
+                    <div>
+                        <span class="block text-slate-400 uppercase tracking-wider font-semibold">Language Pair</span>
+                        <span class="font-medium text-slate-800">EN ➔ PT-BR Localization</span>
+                    </div>
+                    <div>
+                        <span class="block text-slate-400 uppercase tracking-wider font-semibold">Area</span>
+                        <span class="font-medium text-slate-800">Digital Marketing & Editorial</span>
+                    </div>
+                    <div>
+                        <span class="block text-slate-400 uppercase tracking-wider font-semibold">Scope & Adaptations</span>
+                        <span class="font-medium text-slate-800">Conversational tone adaptation | Editorial matching</span>
+                    </div>
+                </div>
+
+                <div class="text-slate-500 text-xs mb-6 italic flex items-center gap-2 text-left">
+                    <i class="fa-solid fa-circle-info text-sky-500"></i> Preserves the dynamic, colloquial and first-person conversational rhythm of modern marketing articles.
+                </div>
+
+                <!-- Bilingual Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <div class="bg-slate-950 text-slate-200 p-6 rounded-2xl border border-slate-800">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-800 text-xs uppercase tracking-wider font-semibold text-brand-500">
+                            <span>Source Text (English)</span>
+                            <i class="fa-solid fa-flag-usa"></i>
+                        </div>
+                        <div class="space-y-6 text-xs sm:text-sm leading-relaxed font-mono">
+                            <div>
+                                "Well, in their defense, when I first started I was pretty clueless myself. And I didn't really have anyone to clue me in on what I could expect from my first professional experiences, but YOU do- ME! And that's why I decided to write this article, sharing some of my Lessons Learned about building a successful career: to right some wrongs in your own mindset, to give you a proper reality check and make sure you set realistic expectations for what's to come."
+                            </div>
+                            <div class="border-t border-slate-800 pt-4">
+                                "Having a mentor works wonders, but they won't walk your path for you. People love "outsourcing" their own responsibilities to others, for thinking it'll make things easier. It won't. As much as I may want to help my students, I can't do their part for them. And I definitely shouldn't, or it would make them incapable and completely dependent on me, instead of helping them become independent and empowered, successful professionals."
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-sky-50/20 text-slate-800 p-6 rounded-2xl border border-sky-100">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-sky-100 text-xs uppercase tracking-wider font-semibold text-brand-900">
+                            <span>Target Text (Portuguese - PT-BR)</span>
+                            <i class="fa-solid fa-flag"></i>
+                        </div>
+                        <div class="space-y-6 text-xs sm:text-sm leading-relaxed">
+                            <div>
+                                "Bem, honra seja feita, quando comecei eu também estava bastante perdida. E eu não tinha alguém que me orientasse sobre o que eu poderia esperar das minhas primeiras experiencias profissionais, mas VOCÊ tem - EU! E é por isso que decidi escrever este artigo, compartilhando algumas das lições que aprendi sobre como construir uma carreira de sucesso: para fazer alguns ajustes na sua própria mentalidade, para te dar um choque de realidade e garantir que você tenha expectativas realistas para o que está por vir."
+                            </div>
+                            <div class="border-t border-sky-100 pt-4">
+                                "Ter um mentor super ajuda, mas ele não vai trilhar o seu caminho por você. As pessoas adoram \"terceirizar\" suas responsabilidades para os outros, por acharem que isso vai facilitar as coisas. Não vai. Por mais que eu queira ajudar meus alunos, não posso fazer a parte deles por eles. E eu definitivamente não deveria, ou isso os tornaria inaptos e completamente dependentes de mim, em vez de ajudá-los a se tornarem profissionais independentes, capacitados e bem-sucedidos."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3 Context -->
+            <div id="project3" class="tab-content hidden">
+                <div class="bg-sky-50/50 rounded-2xl p-5 border border-sky-100/60 mb-8 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-left">
+                    <div>
+                        <span class="block text-slate-400 uppercase tracking-wider font-semibold">Language Pair</span>
+                        <span class="font-medium text-slate-800">EN ➔ PT-BR Localization</span>
+                    </div>
+                    <div>
+                        <span class="block text-slate-400 uppercase tracking-wider font-semibold">Area</span>
+                        <span class="font-medium text-slate-800">Digital Education & Narrative Storytelling</span>
+                    </div>
+                    <div>
+                        <span class="block text-slate-400 uppercase tracking-wider font-semibold">Scope & Adaptations</span>
+                        <span class="font-medium text-slate-800">Direct tone preservation | Audience engagement</span>
+                    </div>
+                </div>
+
+                <div class="text-slate-500 text-xs mb-6 italic flex items-center gap-2 text-left">
+                    <i class="fa-solid fa-circle-info text-sky-500"></i> Shows focus on keeping colloquial structures structured, highly natural, and engaging.
+                </div>
+
+                <!-- Bilingual Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <div class="bg-slate-950 text-slate-200 p-6 rounded-2xl border border-slate-800">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-800 text-xs uppercase tracking-wider font-semibold text-brand-500">
+                            <span>Source Text (English)</span>
+                            <i class="fa-solid fa-flag-usa"></i>
+                        </div>
+                        <div class="space-y-6 text-xs sm:text-sm leading-relaxed font-mono">
+                            <div>
+                                "I had been dreaming (for about 8 years) of teaching young adults a few highly lucrative skills that can allow them to jumpstart a career with enough flexibility to work with other things, while they are still deciding whether or not to get a college degree — and which one it should be. Yes, it took me 8 years (and a buck load of therapy) to finally get to the point of putting myself out there and sharing (I mean “selling”, I’m not a charity)"
+                            </div>
+                            <div class="border-t border-slate-800 pt-4">
+                                "One day, I exported from Hotmart a list of students for administrative purposes (a lot goes on behind the scenes of an online business — as easy and seamless as it may seem, it ain’t). My eyes watered as I noticed the number of lines in the spreadsheet: almost 1,000 students. That’s when it hit me: that’s more than a full classroom of students. That’s an entire School! Wait… I guess I do own a School."
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-sky-50/20 text-slate-800 p-6 rounded-2xl border border-sky-100">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-sky-100 text-xs uppercase tracking-wider font-semibold text-brand-900">
+                            <span>Target Text (Portuguese - PT-BR)</span>
+                            <i class="fa-solid fa-flag"></i>
+                        </div>
+                        <div class="space-y-6 text-xs sm:text-sm leading-relaxed">
+                            <div>
+                                "Eu vinha sonhando (há cerca de 8 anos) em ensinar aos jovens algumas habilidades altamente lucrativas que pudessem lhes permitir dar um pontapé inicial em suas carreiras, com flexibilidade suficiente para conciliar outras atividades, enquanto decidem se vão ou não fazer faculdade — e qual curso escolher. Sim, levei 8 anos (e um bocado de terapia) para finalmente chegar ao ponto de colocar a cara no mundo e compartilhar (leia-se “vender”, eu não sou nenhuma instituição de caridade)."
+                            </div>
+                            <div class="border-t border-sky-100 pt-4">
+                                "Um dia, exportei da Hotmart uma lista de alunos para fins administrativos (há muita coisa que acontece nos bastidores de um negócio online — por mais fácil e fluido que pareça, não é). Meus olhos encheram de lágrimas ao notar o número de linhas na planilha: quase 1.000 alunos. Foi aí que caiu a ficha: isso é mais do que uma sala de aula cheia de alunos. É uma escola inteira! Espera... acho que eu sou dona de uma Escola."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical & Public Health Section -->
+    <section id="medical" class="py-16 md:py-24 bg-slate-950 text-white relative">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 uppercase tracking-widest">
+                    Community & Scientific Outreach
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold">
+                    Medical Translation & Public Health
+                </h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Volunteer contribution focused on translating and post-editing healthcare and medical-related content from English into Brazilian Portuguese (EN → PT-BR) for Wikimedia medical projects.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                <!-- Activities -->
+                <div class="lg:col-span-7 flex flex-col justify-between space-y-8">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-3">
+                            <span class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </span>
+                            <div>
+                                <h3 class="text-lg font-bold">Linguistic Precision in Public Health</h3>
+                                <p class="text-slate-400 text-xs">Collaborating with the Wiki Project Med Foundation task force.</p>
+                            </div>
+                        </div>
+
+                        <!-- Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-left">
+                            <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium text-xs text-white uppercase tracking-wider">Medical Content Translation</h4>
+                                    <p class="text-slate-400 text-xs mt-0.5">Accurate rendering of clinical terminology, diseases, and drugs.</p>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium text-xs text-white uppercase tracking-wider">MTPE</h4>
+                                    <p class="text-slate-400 text-xs mt-0.5">Machine Translation Post-Editing to ensure target language accuracy.</p>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium text-xs text-white uppercase tracking-wider">Terminology Adaptation</h4>
+                                    <p class="text-slate-400 text-xs mt-0.5">Localizing specialized terms into Brazilian standard medical literature.</p>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium text-xs text-white uppercase tracking-wider">Infobox Localization</h4>
+                                    <p class="text-slate-400 text-xs mt-0.5">Post-editing structured templates, scientific classifications, and facts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Updated Wikipedia links: Display names changed, destination URLs preserved -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl space-y-4">
+                        <h4 class="text-xs font-semibold text-emerald-400 uppercase tracking-widest">My Wikipedia Translated Articles</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-left">
+                            <a href="https://pt.wikipedia.org/wiki/Lipedema" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-emerald-400 transition bg-slate-900/50 px-4 py-3 rounded-lg border border-slate-800">
+                                <i class="fa-solid fa-external-link text-emerald-400"></i>
+                                <span class="truncate">Lipedema</span>
+                            </a>
+                            <a href="https://pt.wikipedia.org/wiki/Hidroxicarbamida" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-emerald-400 transition bg-slate-900/50 px-4 py-3 rounded-lg border border-slate-800">
+                                <i class="fa-solid fa-external-link text-emerald-400"></i>
+                                <span class="truncate">Hidroxicarbamida</span>
+                            </a>
+                            <a href="https://pt.wikipedia.org/wiki/Selumetinib" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-emerald-400 transition bg-slate-900/50 px-4 py-3 rounded-lg border border-slate-800">
+                                <i class="fa-solid fa-external-link text-emerald-400"></i>
+                                <span class="truncate">Trombocitose essencial</span>
+                            </a>
+                            <a href="https://pt.wikipedia.org/wiki/Ganirelix" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-emerald-400 transition bg-slate-900/50 px-4 py-3 rounded-lg border border-slate-800">
+                                <i class="fa-solid fa-external-link text-emerald-400"></i>
+                                <span class="truncate">Educação em saúde</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate Display -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div class="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between h-full space-y-6">
+                        <div class="space-y-3 text-left">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono text-[10px] uppercase tracking-wider">Recognition</span>
+                                <span class="text-xs text-emerald-400 flex items-center gap-1 font-semibold">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> +5,000 words
+                                </span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-serif">Certificate of Appreciation</h3>
+                            <p class="text-slate-300 text-xs leading-relaxed">
+                                Awarded by Wiki Project Med Foundation in recognition of valuable translation and post-editing contributions to multilingual healthcare initiatives.
+                            </p>
+                        </div>
+
+                        <!-- Interactive Frame -->
+                        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center cursor-pointer relative group overflow-hidden transition-all hover:border-emerald-500/50" onclick="openCertificateModal()">
+                            <div class="absolute inset-0 bg-emerald-600/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-white text-slate-900 text-xs font-bold px-3 py-1.5 rounded-lg flex items-center gap-1.5 shadow">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate
+                                </span>
+                            </div>
+                            
+                            <div class="border border-dashed border-slate-800 p-4 rounded-lg flex flex-col items-center space-y-2">
+                                <i class="fa-solid fa-award text-4xl text-emerald-400"></i>
+                                <span class="text-xs font-semibold block text-slate-100">Kely Gomes do Nascimento Catapatti</span>
+                                <span class="text-[10px] text-slate-500 block">Wiki Project Med Foundation Inc.</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 text-left">
+                            <span class="text-[10px] text-slate-400 block">Upload your certificate JPEG to render and test inside this interactive box:</span>
+                            <input type="file" id="cert-upload" accept="image/*" class="hidden" onchange="loadLocalCertificate(event)">
+                            <button onclick="document.getElementById('cert-upload').click()" class="w-full py-2 bg-slate-900 hover:bg-slate-800 text-slate-300 rounded-lg text-xs font-medium border border-slate-800 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-upload"></i> Upload Certificate File
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI & Tech Assessment Section -->
+    <section id="ai-tech" class="py-16 md:py-24 bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <span class="text-xs font-semibold text-brand-500 tracking-wider uppercase">Advanced AI Translation</span>
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight mt-1">Linguistic Quality & AI Evaluation</h2>
+                <div class="h-1 w-12 bg-brand-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="bg-gradient-to-r from-slate-900 to-slate-950 text-white rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden text-left">
+                <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-brand-500/10 rounded-full blur-3xl"></div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                    <div class="lg:col-span-7">
+                        <span class="px-2.5 py-1 bg-brand-500/30 rounded-full text-[10px] font-semibold tracking-wider uppercase text-sky-300">
+                            TELUS Digital Contractor
+                        </span>
+                        <h3 class="text-2xl md:text-3xl font-bold mt-4 mb-4">AI Ads Quality Rater</h3>
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+                            Experience with AI-assisted linguistic evaluation, advertising relevance analysis, and multilingual digital content assessment through remote freelance projects.
+                        </p>
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-arrow-right text-brand-500 mt-0.5"></i>
+                                <span>Evaluating personalized internet ads based on intent, syntax alignment, and usefulness.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-arrow-right text-brand-500 mt-0.5"></i>
+                                <span>Applying delete quality assessment to identify basic linguistic errors and model hallucinations.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-arrow-right text-brand-500 mt-0.5"></i>
+                                <span>Strict quality guideline adherence for leading global tech platforms.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:col-span-5 bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-sm">
+                        <h4 class="text-sm font-bold text-white mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-brain text-brand-500"></i> The Quality Differentiator
+                        </h4>
+                        <!-- Updated paragraph text based on instruction 9 -->
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Evaluating AI outputs daily allows me to streamline the MTPE (Machine Translation Post-Editing) workflow, ensuring linguistic consistency and structural accuracy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Workflow Section -->
+    <section id="workflow" class="py-16 bg-slate-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-semibold text-slate-500 tracking-wider uppercase">Working Environment</span>
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight mt-1">Tools & Workflow</h2>
+                <div class="h-1 w-12 bg-brand-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+                <div class="p-4 bg-white border border-slate-100 rounded-xl text-center shadow-sm">
+                    <div class="text-2xl text-brand-500 mb-2"><i class="fa-solid fa-laptop-code"></i></div>
+                    <span class="block text-xs font-bold text-slate-800">Smartcat</span>
+                    <span class="text-[10px] text-slate-400">Collaboration CAT</span>
+                </div>
+                <div class="p-4 bg-white border border-slate-100 rounded-xl text-center shadow-sm">
+                    <div class="text-2xl text-brand-500 mb-2"><i class="fa-solid fa-bolt"></i></div>
+                    <span class="block text-xs font-bold text-slate-800">MateCat</span>
+                    <span class="text-[10px] text-slate-400">CAT Platform</span>
+                </div>
+                <!-- Updated Title based on instruction 10 -->
+                <div class="p-4 bg-white border border-slate-100 rounded-xl text-center shadow-sm">
+                    <div class="text-2xl text-brand-500 mb-2"><i class="fa-solid fa-gears"></i></div>
+                    <span class="block text-xs font-bold text-slate-800">MTPE Workflow</span>
+                    <span class="text-[10px] text-slate-400">Post-Editing Expert</span>
+                </div>
+                <div class="p-4 bg-white border border-slate-100 rounded-xl text-center shadow-sm">
+                    <div class="text-2xl text-brand-500 mb-2"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <span class="block text-xs font-bold text-slate-800">Terminology Research</span>
+                    <span class="text-[10px] text-slate-400">Contextual Glossary</span>
+                </div>
+                <div class="p-4 bg-white border border-slate-100 rounded-xl text-center shadow-sm">
+                    <div class="text-2xl text-brand-500 mb-2"><i class="fa-solid fa-shield-halved"></i></div>
+                    <span class="block text-xs font-bold text-slate-800">QA Review</span>
+                    <span class="text-[10px] text-slate-400">Quality Checks</span>
+                </div>
+                <div class="p-4 bg-white border border-slate-100 rounded-xl text-center shadow-sm">
+                    <div class="text-2xl text-brand-500 mb-2"><i class="fa-solid fa-location-dot"></i></div>
+                    <span class="block text-xs font-bold text-slate-800">EN &rarr; PT-BR</span>
+                    <span class="text-[10px] text-slate-400">Cultural Alignment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-xs font-semibold text-brand-500 tracking-wider uppercase">Let's Connect</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2 mb-6">Let’s create localization that sounds truly native</h2>
+            <p class="text-slate-500 text-sm max-w-2xl mx-auto leading-relaxed mb-10">
+                Contact me to request localized translations, discuss multilingual content projects, or ask for a custom sample test.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="mailto:kely.catapatti@gmail.com" class="p-5 bg-slate-50 border border-slate-100 rounded-2xl hover:border-brand-300 transition-all block text-center">
+                    <div class="w-10 h-10 rounded-xl bg-sky-100 text-brand-500 flex items-center justify-center mx-auto mb-3">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <span class="block text-xs text-slate-400">Email Contact</span>
+                    <span class="text-xs font-semibold text-slate-800 mt-1 break-all">kely.catapatti@gmail.com</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/kely-gomes-RH" target="_blank" class="p-5 bg-slate-50 border border-slate-100 rounded-2xl hover:border-brand-300 transition-all block text-center">
+                    <div class="w-10 h-10 rounded-xl bg-sky-100 text-brand-500 flex items-center justify-center mx-auto mb-3">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <span class="block text-xs text-slate-400">Professional LinkedIn</span>
+                    <span class="text-xs font-semibold text-slate-800 mt-1">kely-gomes-RH</span>
+                </a>
+
+                <div class="p-5 bg-slate-50 border border-slate-100 rounded-2xl text-center">
+                    <div class="w-10 h-10 rounded-xl bg-sky-100 text-brand-500 flex items-center justify-center mx-auto mb-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span class="block text-xs text-slate-400">Location Base</span>
+                    <span class="text-xs font-semibold text-slate-800 mt-1">São Paulo, Brazil</span>
+                </div>
+            </div>
+            <!-- Removed the bottom pill badges "Responses within 2 hours" and "Free translation sample testing available" based on instruction 11 -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-xs">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-left">
+                <span class="text-sm font-bold text-white tracking-tight">Kely Catapatti</span>
+                <p class="mt-1">Expert Translation, Localization, MTPE & Linguistic Evaluation.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#specialties" class="hover:text-white transition">Specialties</a>
+                <a href="#projects" class="hover:text-white transition">Portfolio</a>
+                <a href="#medical" class="hover:text-white transition">Medical</a>
+            </div>
+            <p>&copy; 2026 Kely Catapatti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="cert-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden w-full max-w-4xl max-h-[90vh] flex flex-col relative shadow-2xl">
+            <!-- Modal Header -->
+            <div class="p-4 border-b border-slate-100 flex items-center justify-between bg-slate-50">
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <h3 class="font-bold text-slate-900 text-sm">Medical Volunteering Appreciation Certificate</h3>
+                </div>
+                <button onclick="closeCertificateModal()" class="p-1 rounded-full hover:bg-slate-200 text-slate-500 transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="p-6 overflow-y-auto flex items-center justify-center bg-slate-100 min-h-[400px]">
+                <div id="modal-image-container" class="w-full h-full flex items-center justify-center">
+                    <!-- Modern Fallback SVG styled template -->
+                    <div id="cert-svg-fallback" class="bg-white border-8 border-slate-300 p-8 sm:p-12 rounded-lg shadow-inner max-w-2xl w-full text-center space-y-8 relative overflow-hidden">
+                        <div class="absolute inset-4 border border-slate-200"></div>
+                        <div class="absolute top-8 left-8 w-16 h-16 border-t-2 border-l-2 border-emerald-500"></div>
+                        <div class="absolute bottom-8 right-8 w-16 h-16 border-b-2 border-r-2 border-emerald-500"></div>
+                        
+                        <div class="flex justify-between items-center px-4 relative z-10 text-[10px] tracking-wider text-slate-400 font-semibold uppercase">
+                            <span>WIKI PROJECT MED FOUNDATION</span>
+                            <span>WIKIPEDIA</span>
+                        </div>
+                        
+                        <div class="space-y-2 relative z-10">
+                            <h1 class="text-4xl font-serif font-bold text-slate-900 tracking-wide">CERTIFICATE</h1>
+                            <p class="text-xs tracking-widest text-slate-500 uppercase">of Appreciation</p>
+                        </div>
+                        
+                        <p class="text-slate-500 italic text-sm relative z-10">is proudly presented to</p>
+                        
+                        <h2 class="text-xl sm:text-2xl font-serif font-semibold italic text-emerald-800 border-b border-slate-200 pb-2 max-w-md mx-auto relative z-10">
+                            Kely Gomes do Nascimento Catapatti
+                        </h2>
+                        
+                        <p class="text-xs sm:text-sm text-slate-600 max-w-lg mx-auto leading-relaxed relative z-10">
+                            In recognition of their valuable contribution to the <strong>Healthcare Translation Task Force</strong> through translating medical articles from English into Portuguese, contributing over 5,000 words toward helping communities access reliable knowledge in a language they truly understand.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-4 pt-4 max-w-md mx-auto text-xs relative z-10">
+                            <div class="text-left">
+                                <span class="text-slate-400 block uppercase tracking-wider text-[9px]">Awarded On</span>
+                                <span class="font-semibold text-slate-700">May 20, 2026</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-slate-400 block uppercase tracking-wider text-[9px]">Chair / Founder</span>
+                                <span class="font-semibold text-slate-700">Dr. James Heilman</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Image Tag -->
+                    <img id="cert-uploaded-image" class="hidden max-w-full max-h-[70vh] rounded-lg shadow-xl border border-slate-300" src="" alt="Wiki Project Med Volunteer Certificate">
+                </div>
+            </div>
+            
+            <div class="p-4 border-t border-slate-100 bg-slate-50 flex items-center justify-between text-xs text-slate-500">
+                <p>Certificate digitally issued by Wiki Project Med Foundation Inc.</p>
+                <button onclick="closeCertificateModal()" class="px-4 py-2 bg-slate-900 text-white rounded hover:bg-slate-800 transition-colors">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab switcher & Modal logic script -->
+    <script>
+        function switchTab(projectId) {
+            // Hide all
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.add('hidden');
+                content.classList.remove('block');
+            });
+
+            // Show active
+            const activeContent = document.getElementById(projectId);
+            activeContent.classList.remove('hidden');
+            activeContent.classList.add('block');
+
+            // Reset buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.className = "tab-btn px-4 py-2 text-xs sm:text-sm font-medium rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all border border-slate-200";
+            });
+
+            // Highlight active button
+            const activeBtn = document.getElementById('btn-' + projectId);
+            activeBtn.className = "tab-btn px-4 py-2 text-xs sm:text-sm font-medium rounded-full bg-brand-900 text-white transition-all shadow";
+        }
+
+        function loadLocalCertificate(event) {
+            const input = event.target;
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const img = document.getElementById('cert-uploaded-image');
+                    const fallback = document.getElementById('cert-svg-fallback');
+                    img.src = e.target.result;
+                    img.classList.remove('hidden');
+                    fallback.classList.add('hidden');
+                    openCertificateModal();
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function openCertificateModal() {
+            document.getElementById('cert-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCertificateModal() {
+            document.getElementById('cert-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
